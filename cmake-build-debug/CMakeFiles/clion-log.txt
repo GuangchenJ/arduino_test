@@ -1,0 +1,4 @@
+/snap/clion/149/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/ynu/HDD/ChallengeCup/arduino_test
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/ynu/HDD/ChallengeCup/arduino_test/cmake-build-debug

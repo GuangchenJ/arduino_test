@@ -1,0 +1,3 @@
+/media/ynu/HDD/ChallengeCup/arduino_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/ynu/HDD/ChallengeCup/arduino_test/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/ynu/HDD/ChallengeCup/arduino_test/cmake-build-debug/CMakeFiles/arduino_test.dir
