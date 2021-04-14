@@ -35,7 +35,7 @@ class SerialPort {
   void SetVminAndVTime();
   void SetBaudRate(const int __baud_rate);
  public:
-  explicit SerialPort(const std::string __portName, const int __baud_rate);
+  explicit SerialPort(const std::string __port_name, const int __baud_rate);
   ~SerialPort();
   void ShowTermios();
   std::string ReadSerialPort(const unsigned int __buf_size);

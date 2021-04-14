@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/media/ynu/HDD/ChallengeCup/arduino_test/SerialPort.cpp
+SerialPort.h
+/media/ynu/HDD/ChallengeCup/arduino_test/SerialPort.h
+
 /media/ynu/HDD/ChallengeCup/arduino_test/SerialPort.h
 fcntl.h
 -

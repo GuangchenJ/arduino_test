@@ -202,17 +202,17 @@ void SerialPort::SetBaudRate(const int __baud_rate = 9600) {
   }
 }
 
-SerialPort::SerialPort(const std::string __portName, const int __baud_rate) {
+SerialPort::SerialPort(const std::string __port_name, const int __baud_rate) {
   this->connected_ = false;
 
   // 尝试打开串口
-  this->serial_port_ = open(__portName.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
+  this->serial_port_ = open(__port_name.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
 
   if (-1 == this->serial_port_) {
-    std::cerr << "Open_port: Unable to open " + __portName << std::endl;
+    std::cerr << "Open_port: Unable to open " + __port_name << std::endl;
   } else {
     fcntl(this->serial_port_, F_SETFL, 0);
-    std::cout << "Test Port " + __portName + " has been successfully opened and " << this->serial_port_
+    std::cout << "Test Port " + __port_name + " has been successfully opened and " << this->serial_port_
               << " is the file description" << std::endl;
 
     // 获取当前的串口设置

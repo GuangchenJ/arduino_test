@@ -19,16 +19,16 @@ Arduino的参考代码在 [`arduino_code`](\arduino_code)中，其中[`DH11_rece
 
 其中函数使用如下表所示
 
-| 函数名            | 函数作用                                    | 参数                                                                                                                       |
-| ----------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| SerialPort()      | 构造函数                                    | `__portName`：端口名称，与Arduino IDE上 `工具->端口`中显示的一致；`__baud_rate`：波特率，注意与在Arduino中设置的波特率一致 |
-| ~SerialPort()     | 析构函数                                    |                                                                                                                            |
-| ReadSerialPort()  | 读取Arduino传入的数据（常用只有一个参数的） | `__buf_size`：最大读入字符串大小                                                                                           |
-| WriteSerialPort() | 往Arduino传入数据                           | `__buffer`：写入的数据                                                                                                       |
-| IsConnected()     | 检测连接是否打开                            |                                                                                                                            |
-| CloseSerial()     | 关闭连接                                    |                                                                                                                            |
+| 函数名            | 函数作用                                    | 参数                                                                                                                        |
+| ----------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| SerialPort()      | 构造函数                                    | `__port_name`：端口名称，与Arduino IDE上 `工具->端口`中显示的一致；`__baud_rate`：波特率，注意与在Arduino中设置的波特率一致 |
+| ~SerialPort()     | 析构函数                                    |                                                                                                                             |
+| ReadSerialPort()  | 读取Arduino传入的数据（常用只有一个参数的） | `__buf_size`：最大读入字符串大小                                                                                            |
+| WriteSerialPort() | 往Arduino传入数据                           | `__buffer`：写入的数据                                                                                                      |
+| IsConnected()     | 检测连接是否打开                            |                                                                                                                             |
+| CloseSerial()     | 关闭连接                                    |                                                                                                                             |
 
-注意使用时填写好端口`__portName`和波特率`__baud_rate`，否则会出现BUG。还有注意好睡眠时间要和Arduino中的`delay()`一致。
+注意使用时填写好端口`__portname`和波特率`__baud_rate`，否则会出现BUG。还有注意好睡眠时间要和Arduino中的`delay()`一致。
 
 ![cpp_receive_data_example](/imgs/cpp_receive_data_example.png)
 
