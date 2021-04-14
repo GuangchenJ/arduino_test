@@ -17,13 +17,9 @@
 
 class SerialPort {
  private:
-
   bool connected_;
   struct termios tty_;
   int serial_port_;
-  //  HANDLE handler_;
-  //  COMSTAT status_;
-//  DWORD errors_;
   void SetControlModes(const bool __parity,
                        const bool __one_stop_bit,
                        const int __bit_per_byte,
