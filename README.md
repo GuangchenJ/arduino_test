@@ -37,3 +37,5 @@ Arduino的参考代码在 [`arduino_code`](\arduino_code)中，其中[`DH11_rece
 ![cpp_send_data_example](/imgs/cpp_send_data_example.png)
 
 传入数据程序是一直向其传入"Hello World!"，然后Arduino收到后返回给C++程序。
+
+Inspired by https://blog.mbedded.ninja/
